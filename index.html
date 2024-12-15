@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Pice Api Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main id="main">
+        <div class="container">
+            <h1>One Piece characters</h1>
+            <div id="luffy">
+                <img src="imgs/luffy.webp" alt="Luffy">
+                <button id="fetch">Go!</button>
+            </div>
+        </div>
+
+        <div id="characters">
+            <div id="searchBar">
+                <input type="text" id="search" placeholder="Search characters...">
+            </div>
+            <div id="content"></div>
+            <div id="loading">
+                <img src="imgs/spinner.gif" alt="Loading...">
+            </div>
+        </div>
+        </main>
+
+        <div id="myModal"></div>
+</body>
+<script src="index.js"></script>
+</html>

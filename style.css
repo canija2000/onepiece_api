@@ -1,0 +1,260 @@
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
+#main {
+    display : flex ; 
+    margin : 2rem 1.2rem ;
+} 
+
+.container {
+    background: rgb(94,200,172);
+    background: linear-gradient(0deg, rgba(94,200,172,1) 0%, rgba(180,235,198,1) 46%, rgba(217,252,203,1) 100%);
+    padding: 4rem;
+    height: 37rem;
+    border-radius: 2rem;
+}
+
+.container h1 {
+    color :#67b89a;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container img {
+    width: 10rem;
+    height: 13rem;
+    background-blend-mode: multiply;
+
+
+}
+
+#luffy {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#fetch {
+    
+    height: 2.9rem;
+    width: 2.9rem;
+    border: 0.1rem solid #4a5248;
+    box-shadow: 0.1rem 0.1rem 0.1rem #4a5248;
+    border-radius: 5rem;
+    margin: 4rem 2.5rem;
+    font-weight: bold;
+}
+
+#fetch:hover{
+    background-color: #87bcb0;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #4a5248;
+    box-shadow: none;
+}
+
+
+#characters{
+    display: block;
+    margin-left : 1.5rem;
+}
+
+#content{
+    display: block;
+    width: 60rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+
+#loading {
+    display: none;
+    margin: 20rem;
+}
+
+
+
+table {
+    width: 59rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    position: relative;
+}
+
+thead {
+
+    position: sticky;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    
+}
+
+.table-responsive{
+    max-height: 38rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+
+thead tr,
+tbody tr {
+    display: table;
+    width: 59rem;
+    table-layout: fixed;
+}
+
+thead th {
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border : 0.5px solid #bd99b4;
+    background-color: #d7c0d1;
+}
+
+
+thead tr:first-child th:first-child {
+    border-top-left-radius: 1.5rem;
+}
+
+thead tr:first-child th:last-child {
+    border-top-right-radius: 1.5rem;
+}
+
+tbody {
+    max-height: 50rem;
+    overflow-y: auto;
+}
+
+tbody tr {
+    
+    background-color: #e9dee8;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+tbody td {
+    padding: 1rem;
+  
+    border-bottom: 1px solid #d7c0d1;
+    border-right: 1px solid #d7c0d1;
+    max-width: 19rem;
+}
+
+tbody tr:hover {
+    background-color: #d5b8cd;
+}
+
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 10rem;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 12rem;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 12rem;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 12rem;
+}
+
+
+#myModal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #4a5248;
+}
+
+.modal-content {
+    background-color: rgb(157, 176, 233);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20rem;
+    height: 21rem;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 0.1rem #252724;
+
+}
+
+.close{
+    cursor: pointer;
+    color: #00023e;
+    background-color: #6877ff;
+    border-radius: 2rem;
+    padding: 0.15rem 0.4rem;
+    font-size: 0.9rem;
+    text-align: end;
+    align-items: end;
+}
+
+.close:hover{
+    background-color: #fa55e4;
+}
+
+.modal-header{
+    text-align : end;
+}
+
+
+.modal-content img{
+    width: 50%;
+    height: 50%;
+    border-radius: 1rem;
+    margin: 3.2rem 5rem;
+}
+
+#searchBar{
+    margin : 0;
+    padding: 0;
+    height: 3rem;
+}
+
+#searchBar input{
+    padding: 0.5rem;
+    width: 58rem;
+    border-radius: 1rem;
+    border: 0.1rem solid #4a5248;
+}
+
+/* WebKit browsers (Chrome, Safari) */
+.table-responsive::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f6b3ff; /* Background of the scrollbar track */
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #d66d6d; /* Color of the scrollbar thumb */
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #e49b9b; /* Color of the scrollbar thumb on hover */
+}
+
+/* Firefox */
+.table-responsive {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #916c92 #f1caf0; /* Color of the scrollbar thumb and track */
+}
